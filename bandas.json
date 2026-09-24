@@ -1,0 +1,18 @@
+{
+    "bandas": [
+        {
+            "The Beatles": 1,
+            "The Rolling Stones": 2,
+            "La renga": 3
+        }
+    ],
+    "tablaturas": [
+
+    ],
+    "Paises":[
+        {
+            "Inglaterra": 1,
+            "Argentina" : 2
+        }
+    ]
+}
