@@ -1,0 +1,15 @@
+# Entorno virtual
+myvenv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store

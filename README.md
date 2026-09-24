@@ -2,15 +2,20 @@
 
 ## Resumen
 
-La idea para nuestro proyecto se debe a nuestro interés en hacer un programa relacionado con la música. Es por eso que a partir de nuestro conocimiento decidimos hacer una herramienta pensada para los fanáticos de la música.
+La idea para nuestro proyecto se debe a nuestro gran gusto por la música, de ahí  nace nuestro interés en combinar ambos gustos y armar este programa sobre organización musical.
 
-El programa va a constar de una página en donde el usuario se va a poder registrar y tener su propio perfil. Ahí va a poder buscar y seleccionar canciones de sus artistas favoritos, donde tendrá sus tablaturas e información de la canción.
+El programa consta de varios módulos:
+- El módulo CORE que va a tener todo lo relacionado al núcleo del proyecto, un archivo llamado bandas.json que va a servir como base de datos con todos los datos necesarios para nuestro proyecto.
+- El módulo REGISTRATION que va tener todos los archivos con la lógica (a desarrollar) del login y registro del usuario.
+- El módulo REPORTES que va a tener todo lo relacionado a generar reportes sobre distintas indicaciones y se trasladen a un archivo xlsx, xls, pdf, etc.
 
-El problema que queremos resolver es tener una forma simple de organizar la información de nuestras canciones favoritas y así el usuario pueda tener todo lo que necesita de una canción en un mismo lugar. Algo muy útil para músicos que buscan aprender sobre sus artistas favoritos.
+Con esto el usuario va a poder crear su cuenta y poder buscar y seleccionar canciones de sus artistas favoritos, donde tendrá sus tablaturas e información de la canción y alojarlas en su perfil.
 
-Nuestra motivación principal para este proyecto fue principalmente el interes por la música y la programación, pudiendo combinar ambos conocimientos para desarrollar este programa y dar un aporte al mundo musical.
+El problema que queremos resolver es tener una forma simple de organizar la información de nuestras canciones favoritas y así el usuario pueda tener todo lo que necesita de una canción en un mismo lugar. Algo muy útil para músicos o fanáticos que buscan aprender sobre sus artistas favoritos.
 
-## Integrantes
+Nuestra motivación principal para este proyecto fue compartir gustos musicales.
 
-- Nahuel Uriel Alba Fernández
-- Julian Rosas Sandillú
+## Integrantes del grupo
+
+- Alba Fernández, Nahuel Uriel
+- Rosas Sandillú, Julián Exequiel
