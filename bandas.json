@@ -14,5 +14,13 @@
             "Inglaterra": 1,
             "Argentina" : 2
         }
+    ],
+    "usuarios": [
+        {
+            "Usuario1": "1234",
+            "Usuario2": "5678",
+            "Usuario3": "2468"
+
+        }
     ]
 }
