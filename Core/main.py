@@ -36,7 +36,8 @@ def menuUsuario(usuario):
         print("4. Editar banda")
         print("5. Eliminar banda")
         print("6. Reporte: bandas por país")
-        print("7. Cerrar sesión")
+        print("7. Agregar tablatura")
+        print("8. Cerrar sesión")
         opcion = input("Elegí una opción: ").strip()
 
         if opcion == "1":
@@ -52,6 +53,8 @@ def menuUsuario(usuario):
         elif opcion == "6":
             reportes.reporteBandasPorPais()
         elif opcion == "7":
+            abms.agregartablaturas()
+        elif opcion == "8":
             print("Sesión cerrada.")
             break
         else:

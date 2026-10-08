@@ -4,6 +4,26 @@
             "id": 1,
             "nombre": "Patricio Rey Y Sus Redonditos De Ricota",
             "pais_id": 9
+        },
+        {
+            "id": 2,
+            "nombre": "Los Piojos",
+            "pais_id": 9
+        },
+        {
+            "id": 3,
+            "nombre": "The Rolling Stones",
+            "pais_id": 144
+        },
+        {
+            "id": 4,
+            "nombre": "The Beatles",
+            "pais_id": 144
+        },
+        {
+            "id": 5,
+            "nombre": "Intoxicados",
+            "pais_id": 9
         }
     ],
     "paises": [
@@ -788,11 +808,34 @@
             "nombre": "Zimbabue"
         }
     ],
-    "tablaturas": [],
+    "tablaturas": [
+        {
+            "id": 1,
+            "nombre": "JiJiJi",
+            "link": "https://www.cifraclub.com/los-redonditos-de-ricota/jijiji/",
+            "banda_id": 1
+        },
+        {
+            "id": 2,
+            "nombre": "Let it Be",
+            "link": "https://www.cifraclub.com/the-beatles/let-it-be/",
+            "banda_id": 4
+        }
+    ],
     "usuarios": [
         {
             "usuario": "juli",
             "contraseña": "asd",
+            "bandas_favoritas": []
+        },
+        {
+            "usuario": "Nahuel",
+            "contraseña": "321",
+            "bandas_favoritas": []
+        },
+        {
+            "usuario": "admin",
+            "contraseña": "admin1",
             "bandas_favoritas": []
         }
     ]

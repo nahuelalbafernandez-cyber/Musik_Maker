@@ -78,3 +78,48 @@ def eliminarBanda():
     datos["bandas"].remove(banda)
     core.guardarDatos(datos)
     print("Banda eliminada.")
+
+def pedirbanda(datos):
+    """Pide una banda por nombre y devuelve su id, o None si no se eligió ninguno."""
+    banda = core.elegirPorNombre(datos["bandas"], "banda: ")
+    if banda is None:
+        return None
+    print("Banda: " + banda["nombre"])
+    return banda["id"]
+
+def  agregartablaturas():
+     datos = core.leerDatos()
+     print("\n--- AGREGAR TABLATURA---")
+     nombre = input("Nombre de la tablatura").strip()
+     if nombre =="":
+         print("No se ingresó un nombre válido")
+         return
+     
+     if core.existeNombre(datos["tablaturas"], nombre):
+         print("Esa tablatura ya existe.")
+         return
+     
+     link = input("link de la tablatura")
+     if link =="":
+          print("No se ingresó ningun link")
+          return
+     
+     banda_id = pedirbanda(datos)
+     if banda_id is None:
+         return
+     
+     id_nuevo = 1
+     for tablatura in datos["tablaturas"]:
+         if tablatura["id"] >= id_nuevo:
+                     id_nuevo = tablatura["id"] + 1
+
+     nueva_tablatura = {
+            "id": id_nuevo,
+            "nombre": nombre,
+            "link": link,
+            "banda_id": banda_id
+     }
+     datos["tablaturas"].append(nueva_tablatura)
+     core.guardarDatos(datos)
+     print("Tablatura Agregada.")
+ 
