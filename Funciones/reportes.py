@@ -1,32 +1,27 @@
 from openpyxl import Workbook
 from openpyxl.styles import Font
 
-from Core import funciones as core
+from Funciones import datos, pantalla, auxiliares
 
 
 # ==================== REPORTES ====================
 def reporteBandasPorPais():
-    datos = core.leerDatos()
-    print("\n--- REPORTE: BANDAS POR PAÍS ---")
+    bandas = datos.leerDatos("bandas")
+    paises = datos.leerDatos("paises")
 
-    pais = core.elegirPorNombre(datos["paises"], "¿De qué país?: ")
+    pais = auxiliares.elegirPorNombre(paises, "Reporte", "¿De qué país?")
     if pais is None:
         return
 
     # Juntamos las bandas de ese país
     bandas_del_pais = []
-    for banda in datos["bandas"]:
+    for banda in bandas:
         if banda["pais_id"] == pais["id"]:
             bandas_del_pais.append(banda)
 
     if len(bandas_del_pais) == 0:
-        print("No hay bandas de " + pais["nombre"] + ".")
+        pantalla.avisar("No hay bandas de " + pais["nombre"] + ".")
         return
-
-    # Mostramos en pantalla
-    print("Bandas de " + pais["nombre"] + ":")
-    for banda in bandas_del_pais:
-        print("- " + banda["nombre"])
 
     # Armamos el Excel
     libro = Workbook()             # el archivo
@@ -49,4 +44,9 @@ def reporteBandasPorPais():
     nombre_archivo = "Reportes/bandas_" + pais["nombre"].replace(" ", "_") + ".xlsx"
     libro.save(nombre_archivo)
 
-    print("Reporte descargado en: " + nombre_archivo)
+    # Mostramos en pantalla las bandas y dónde quedó el Excel
+    lineas = []
+    for banda in bandas_del_pais:
+        lineas.append(banda["nombre"])
+    pantalla.mostrarLista("Bandas de " + pais["nombre"], lineas)
+    pantalla.avisar("Reporte descargado en: " + nombre_archivo)

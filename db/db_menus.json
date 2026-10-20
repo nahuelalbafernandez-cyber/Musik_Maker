@@ -1,0 +1,45 @@
+{
+    "inicio": {
+        "titulo": "MUSIK MAKER",
+        "opciones": [
+            {"texto": "Iniciar sesión", "accion": "iniciar_sesion"},
+            {"texto": "Registrarse", "accion": "registrarse"},
+            {"texto": "Salir", "accion": "salir"}
+        ]
+    },
+    "principal": {
+        "titulo": "Menú principal",
+        "opciones": [
+            {"texto": "Bandas", "submenu": "bandas"},
+            {"texto": "Tablaturas", "submenu": "tablaturas"},
+            {"texto": "Reportes", "submenu": "reportes"},
+            {"texto": "Cerrar sesión", "accion": "cerrar_sesion"}
+        ]
+    },
+    "bandas": {
+        "titulo": "Bandas",
+        "opciones": [
+            {"texto": "Buscar banda", "accion": "buscar_banda"},
+            {"texto": "Ver todas las bandas", "accion": "ver_bandas"},
+            {"texto": "Agregar banda", "accion": "agregar_banda"},
+            {"texto": "Editar banda", "accion": "editar_banda"},
+            {"texto": "Eliminar banda", "accion": "eliminar_banda"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "tablaturas": {
+        "titulo": "Tablaturas",
+        "opciones": [
+            {"texto": "Ver tablaturas", "accion": "ver_tablaturas"},
+            {"texto": "Agregar tablatura", "accion": "agregar_tablatura"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "reportes": {
+        "titulo": "Reportes",
+        "opciones": [
+            {"texto": "Bandas por país (Excel)", "accion": "reporte_bandas_por_pais"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    }
+}
