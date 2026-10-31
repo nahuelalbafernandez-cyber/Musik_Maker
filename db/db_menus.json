@@ -22,6 +22,7 @@
             {"texto": "Buscar banda", "accion": "buscar_banda"},
             {"texto": "Ver todas las bandas", "accion": "ver_bandas"},
             {"texto": "Agregar banda", "accion": "agregar_banda"},
+            {"texto": "Agregar integrante", "accion": "agregar_integrante"},
             {"texto": "Editar banda", "accion": "editar_banda"},
             {"texto": "Eliminar banda", "accion": "eliminar_banda"},
             {"texto": "Volver", "submenu": "principal"}

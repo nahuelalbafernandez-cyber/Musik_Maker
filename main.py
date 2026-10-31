@@ -1,6 +1,6 @@
 # Ejecutar desde la carpeta raíz del proyecto con:  python main.py
 
-from Funciones import datos, pantalla, usuarios, bandas, tablaturas, reportes
+from Funciones import datos, pantalla, usuarios, bandas, integrantes, tablaturas, reportes
 
 
 # Usuario que inició sesión (None = nadie)
@@ -40,6 +40,7 @@ ACCIONES = {
     "agregar_banda": bandas.agregarBanda,
     "editar_banda": bandas.editarBanda,
     "eliminar_banda": bandas.eliminarBanda,
+    "agregar_integrante": integrantes.agregarIntegrante,
     "ver_tablaturas": tablaturas.mostrarTablaturas,
     "agregar_tablatura": tablaturas.agregarTablatura,
     "reporte_bandas_por_pais": reportes.reporteBandasPorPais

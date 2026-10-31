@@ -3,5 +3,10 @@
         "usuario": "juli",
         "contraseña": "asd",
         "bandas_favoritas": []
+    },
+    {
+        "usuario": "Nahuel",
+        "contraseña": "123",
+        "bandas_favoritas": []
     }
 ]

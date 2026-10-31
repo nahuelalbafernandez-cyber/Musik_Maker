@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "John Lennon",
+        "instrumento": "Voz y guitarra",
+        "banda_id": 4
+    },
+    {
+        "id": 2,
+        "nombre": "Paul McCartney",
+        "instrumento": "Bajo",
+        "banda_id": 4
+    },
+    {
+        "id": 3,
+        "nombre": "George Harrison",
+        "instrumento": "Guitarra Eléctrica",
+        "banda_id": 4
+    },
+    {
+        "id": 4,
+        "nombre": "Ringo Starr",
+        "instrumento": "Batería",
+        "banda_id": 4
+    }
+]
