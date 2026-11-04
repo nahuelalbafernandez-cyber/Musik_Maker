@@ -1,11 +1,9 @@
 # Ejecutar desde la carpeta raíz del proyecto con:  python main.py
 
-from Funciones import datos, pantalla, usuarios, bandas, integrantes, tablaturas, reportes
-
+from Funciones import datos, pantalla, usuarios, bandas, generos, paises, integrantes, tablaturas, reportes, favoritas
 
 # Usuario que inició sesión (None = nadie)
 usuario_actual = None
-
 
 # ==================== ACCIONES DE INICIO Y SESIÓN ====================
 def iniciarSesion():
@@ -15,17 +13,25 @@ def iniciarSesion():
         usuario_actual = usuario
         mostrarMenu("principal")
 
-
 def cerrarSesion():
     global usuario_actual
     usuario_actual = None
     pantalla.avisar("Sesión cerrada.")
     mostrarMenu("inicio")
 
-
 def salir():
     pantalla.ventana.destroy()
 
+# ==================== ACCIONES DE FAVORITAS ====================
+# Las favoritas son de cada usuario, por eso les pasamos quién inició sesión.
+def verFavoritas():
+    favoritas.mostrarFavoritas(usuario_actual)
+
+def agregarFavorita():
+    favoritas.agregarFavorita(usuario_actual)
+
+def quitarFavorita():
+    favoritas.quitarFavorita(usuario_actual)
 
 # ==================== ACCIONES ====================
 # En db_menus.json cada botón tiene una "accion" (un texto).
@@ -40,12 +46,28 @@ ACCIONES = {
     "agregar_banda": bandas.agregarBanda,
     "editar_banda": bandas.editarBanda,
     "eliminar_banda": bandas.eliminarBanda,
+    "ver_favoritas": verFavoritas,
+    "agregar_favorita": agregarFavorita,
+    "quitar_favorita": quitarFavorita,
+    "ver_generos": generos.mostrarGeneros,
+    "agregar_genero": generos.agregarGenero,
+    "editar_genero": generos.editarGenero,
+    "eliminar_genero": generos.eliminarGenero,
+    "ver_paises": paises.mostrarPaises,
+    "agregar_pais": paises.agregarPais,
+    "editar_pais": paises.editarPais,
+    "eliminar_pais": paises.eliminarPais,
+    "ver_integrantes": integrantes.mostrarIntegrantes,
     "agregar_integrante": integrantes.agregarIntegrante,
+    "editar_integrante": integrantes.editarIntegrante,
+    "eliminar_integrante": integrantes.eliminarIntegrante,
     "ver_tablaturas": tablaturas.mostrarTablaturas,
     "agregar_tablatura": tablaturas.agregarTablatura,
-    "reporte_bandas_por_pais": reportes.reporteBandasPorPais
+    "editar_tablatura": tablaturas.editarTablatura,
+    "eliminar_tablatura": tablaturas.eliminarTablatura,
+    "reporte_bandas_por_pais": reportes.reporteBandasPorPais,
+    "reporte_combinado": reportes.reporteCombinado
 }
-
 
 # ==================== MENÚS DINÁMICOS ====================
 def elegirOpcion(opcion):
@@ -63,11 +85,9 @@ def elegirOpcion(opcion):
     funcion = ACCIONES[nombre_accion]
     funcion()
 
-
 def crearBoton(opcion):
     """Crea el botón de una opción. Cada botón llama a elegirOpcion con SU opción."""
     pantalla.boton(opcion["texto"], lambda: elegirOpcion(opcion))
-
 
 def mostrarMenu(nombre_menu):
     """Lee el menú desde db_menus.json y dibuja un botón por cada opción."""
@@ -84,7 +104,6 @@ def mostrarMenu(nombre_menu):
 
     for opcion in menu["opciones"]:
         crearBoton(opcion)
-
 
 # ==================== PROGRAMA PRINCIPAL ====================
 mostrarMenu("inicio")

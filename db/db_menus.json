@@ -11,6 +11,10 @@
         "titulo": "Menú principal",
         "opciones": [
             {"texto": "Bandas", "submenu": "bandas"},
+            {"texto": "Mis favoritas", "submenu": "favoritas"},
+            {"texto": "Géneros", "submenu": "generos"},
+            {"texto": "Países", "submenu": "paises"},
+            {"texto": "Integrantes", "submenu": "integrantes"},
             {"texto": "Tablaturas", "submenu": "tablaturas"},
             {"texto": "Reportes", "submenu": "reportes"},
             {"texto": "Cerrar sesión", "accion": "cerrar_sesion"}
@@ -22,9 +26,47 @@
             {"texto": "Buscar banda", "accion": "buscar_banda"},
             {"texto": "Ver todas las bandas", "accion": "ver_bandas"},
             {"texto": "Agregar banda", "accion": "agregar_banda"},
-            {"texto": "Agregar integrante", "accion": "agregar_integrante"},
             {"texto": "Editar banda", "accion": "editar_banda"},
             {"texto": "Eliminar banda", "accion": "eliminar_banda"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "favoritas": {
+        "titulo": "Mis favoritas",
+        "opciones": [
+            {"texto": "Ver mis favoritas", "accion": "ver_favoritas"},
+            {"texto": "Agregar favorita", "accion": "agregar_favorita"},
+            {"texto": "Quitar favorita", "accion": "quitar_favorita"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "generos": {
+        "titulo": "Géneros",
+        "opciones": [
+            {"texto": "Ver todos los géneros", "accion": "ver_generos"},
+            {"texto": "Agregar género", "accion": "agregar_genero"},
+            {"texto": "Editar género", "accion": "editar_genero"},
+            {"texto": "Eliminar género", "accion": "eliminar_genero"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "paises": {
+        "titulo": "Países",
+        "opciones": [
+            {"texto": "Ver todos los países", "accion": "ver_paises"},
+            {"texto": "Agregar país", "accion": "agregar_pais"},
+            {"texto": "Editar país", "accion": "editar_pais"},
+            {"texto": "Eliminar país", "accion": "eliminar_pais"},
+            {"texto": "Volver", "submenu": "principal"}
+        ]
+    },
+    "integrantes": {
+        "titulo": "Integrantes",
+        "opciones": [
+            {"texto": "Ver todos los integrantes", "accion": "ver_integrantes"},
+            {"texto": "Agregar integrante", "accion": "agregar_integrante"},
+            {"texto": "Editar integrante", "accion": "editar_integrante"},
+            {"texto": "Eliminar integrante", "accion": "eliminar_integrante"},
             {"texto": "Volver", "submenu": "principal"}
         ]
     },
@@ -33,6 +75,8 @@
         "opciones": [
             {"texto": "Ver tablaturas", "accion": "ver_tablaturas"},
             {"texto": "Agregar tablatura", "accion": "agregar_tablatura"},
+            {"texto": "Editar tablatura", "accion": "editar_tablatura"},
+            {"texto": "Eliminar tablatura", "accion": "eliminar_tablatura"},
             {"texto": "Volver", "submenu": "principal"}
         ]
     },
@@ -40,6 +84,7 @@
         "titulo": "Reportes",
         "opciones": [
             {"texto": "Bandas por país (Excel)", "accion": "reporte_bandas_por_pais"},
+            {"texto": "Reporte combinado (Excel)", "accion": "reporte_combinado"},
             {"texto": "Volver", "submenu": "principal"}
         ]
     }

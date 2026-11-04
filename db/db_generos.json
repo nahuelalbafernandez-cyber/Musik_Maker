@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Rock"
+    },
+    {
+        "id": 2,
+        "nombre": "Pop"
+    },
+    {
+        "id": 3,
+        "nombre": "Metal"
+    },
+    {
+        "id": 4,
+        "nombre": "Punk"
+    },
+    {
+        "id": 5,
+        "nombre": "Blues"
+    },
+    {
+        "id": 6,
+        "nombre": "Grunge"
+    },
+    {
+        "id": 7,
+        "nombre": "Reggae"
+    }
+]

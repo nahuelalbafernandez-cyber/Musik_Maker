@@ -8,5 +8,13 @@
         "usuario": "Nahuel",
         "contraseña": "123",
         "bandas_favoritas": []
+    },
+    {
+        "usuario": "asd11",
+        "contraseña": "11",
+        "bandas_favoritas": [
+            1,
+            5
+        ]
     }
 ]

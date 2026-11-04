@@ -3,24 +3,63 @@
         "id": 1,
         "nombre": "John Lennon",
         "instrumento": "Voz y guitarra",
-        "banda_id": 4
+        "banda_id": 4,
+        "pais_id": 144
     },
     {
         "id": 2,
         "nombre": "Paul McCartney",
         "instrumento": "Bajo",
-        "banda_id": 4
+        "banda_id": 4,
+        "pais_id": 144
     },
     {
         "id": 3,
         "nombre": "George Harrison",
-        "instrumento": "Guitarra Eléctrica",
-        "banda_id": 4
+        "instrumento": "Guitarra",
+        "banda_id": 4,
+        "pais_id": 144
     },
     {
         "id": 4,
         "nombre": "Ringo Starr",
         "instrumento": "Batería",
-        "banda_id": 4
+        "banda_id": 4,
+        "pais_id": 144
+    },
+    {
+        "id": 5,
+        "nombre": "Indio Solari",
+        "instrumento": "Voz",
+        "banda_id": 1,
+        "pais_id": 9
+    },
+    {
+        "id": 6,
+        "nombre": "Skay",
+        "instrumento": "Guitarra",
+        "banda_id": 1,
+        "pais_id": 9
+    },
+    {
+        "id": 7,
+        "nombre": "Walter Sidotti",
+        "instrumento": "Batería",
+        "banda_id": 1,
+        "pais_id": 9
+    },
+    {
+        "id": 8,
+        "nombre": "Semilla Bucciarelli",
+        "instrumento": "Bajo",
+        "banda_id": 1,
+        "pais_id": 9
+    },
+    {
+        "id": 9,
+        "nombre": "Sergio Dawi",
+        "instrumento": "Saxofón",
+        "banda_id": 1,
+        "pais_id": 9
     }
 ]

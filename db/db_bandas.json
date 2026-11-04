@@ -2,26 +2,385 @@
     {
         "id": 1,
         "nombre": "Patricio Rey Y Sus Redonditos De Ricota",
-        "pais_id": 9
-    },
-    {
-        "id": 2,
-        "nombre": "Los Piojos",
-        "pais_id": 9
+        "pais_id": 9,
+        "genero_id": 1
     },
     {
         "id": 3,
         "nombre": "The Rolling Stones",
-        "pais_id": 144
+        "pais_id": 144,
+        "genero_id": 1
     },
     {
         "id": 4,
         "nombre": "The Beatles",
-        "pais_id": 144
+        "pais_id": 144,
+        "genero_id": 1
     },
     {
         "id": 5,
-        "nombre": "Intoxicados",
-        "pais_id": 9
+        "nombre": "Megadeth",
+        "pais_id": 59,
+        "genero_id": 3
+    },
+    {
+        "id": 6,
+        "nombre": "Soda Stereo",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Bob Marley & The Wailers",
+        "pais_id": 91,
+        "genero_id": 7
+    },
+    {
+        "id": 8,
+        "nombre": "System Of A Down",
+        "pais_id": 59,
+        "genero_id": 3
+    },
+    {
+        "id": 9,
+        "nombre": "Nirvana",
+        "pais_id": 59,
+        "genero_id": 6
+    },
+    {
+        "id": 10,
+        "nombre": "Alice In Chains",
+        "pais_id": 59,
+        "genero_id": 6
+    },
+    {
+        "id": 11,
+        "nombre": "Soundgarden",
+        "pais_id": 59,
+        "genero_id": 6
+    },
+    {
+        "id": 12,
+        "nombre": "Pearl Jam",
+        "pais_id": 59,
+        "genero_id": 6
+    },
+    {
+        "id": 13,
+        "nombre": "Black Sabbath",
+        "pais_id": 144,
+        "genero_id": 3
+    },
+    {
+        "id": 14,
+        "nombre": "Judas Priest",
+        "pais_id": 144,
+        "genero_id": 3
+    },
+    {
+        "id": 15,
+        "nombre": "Motörhead",
+        "pais_id": 144,
+        "genero_id": 3
+    },
+    {
+        "id": 16,
+        "nombre": "Iron Maiden",
+        "pais_id": 144,
+        "genero_id": 3
+    },
+    {
+        "id": 17,
+        "nombre": "The Ramones",
+        "pais_id": 59,
+        "genero_id": 4
+    },
+    {
+        "id": 18,
+        "nombre": "Sex Pistols",
+        "pais_id": 144,
+        "genero_id": 4
+    },
+    {
+        "id": 19,
+        "nombre": "The Clash",
+        "pais_id": 144,
+        "genero_id": 4
+    },
+    {
+        "id": 20,
+        "nombre": "The Offspring",
+        "pais_id": 59,
+        "genero_id": 4
+    },
+    {
+        "id": 21,
+        "nombre": "2 Minutos",
+        "pais_id": 9,
+        "genero_id": 4
+    },
+    {
+        "id": 22,
+        "nombre": "La Renga",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 23,
+        "nombre": "Guns N' Roses",
+        "pais_id": 59,
+        "genero_id": 1
+    },
+    {
+        "id": 24,
+        "nombre": "Abba",
+        "pais_id": 170,
+        "genero_id": 2
+    },
+    {
+        "id": 25,
+        "nombre": "Miranda!",
+        "pais_id": 9,
+        "genero_id": 2
+    },
+    {
+        "id": 26,
+        "nombre": "Los Pericos",
+        "pais_id": 9,
+        "genero_id": 7
+    },
+    {
+        "id": 27,
+        "nombre": "Los Cafres",
+        "pais_id": 9,
+        "genero_id": 7
+    },
+    {
+        "id": 28,
+        "nombre": "SOJA",
+        "pais_id": 59,
+        "genero_id": 7
+    },
+    {
+        "id": 29,
+        "nombre": "AC/DC",
+        "pais_id": 11,
+        "genero_id": 1
+    },
+    {
+        "id": 30,
+        "nombre": "Foo Fighters",
+        "pais_id": 59,
+        "genero_id": 1
+    },
+    {
+        "id": 31,
+        "nombre": "Metallica",
+        "pais_id": 59,
+        "genero_id": 3
+    },
+    {
+        "id": 32,
+        "nombre": "Nonpalidece",
+        "pais_id": 9,
+        "genero_id": 7
+    },
+    {
+        "id": 33,
+        "nombre": "Oasis",
+        "pais_id": 144,
+        "genero_id": 1
+    },
+    {
+        "id": 34,
+        "nombre": "Rammstein",
+        "pais_id": 3,
+        "genero_id": 3
+    },
+    {
+        "id": 35,
+        "nombre": "Sodom",
+        "pais_id": 3,
+        "genero_id": 3
+    },
+    {
+        "id": 36,
+        "nombre": "Rise Against",
+        "pais_id": 59,
+        "genero_id": 4
+    },
+    {
+        "id": 37,
+        "nombre": "Zona Ganjah",
+        "pais_id": 38,
+        "genero_id": 7
+    },
+    {
+        "id": 38,
+        "nombre": "Nsync",
+        "pais_id": 59,
+        "genero_id": 2
+    },
+    {
+        "id": 39,
+        "nombre": "Memphis La Blusera",
+        "pais_id": 9,
+        "genero_id": 5
+    },
+    {
+        "id": 40,
+        "nombre": "La Mississippi",
+        "pais_id": 9,
+        "genero_id": 5
+    },
+    {
+        "id": 41,
+        "nombre": "B.B. King",
+        "pais_id": 59,
+        "genero_id": 5
+    },
+    {
+        "id": 42,
+        "nombre": "Muddy Waters",
+        "pais_id": 59,
+        "genero_id": 5
+    },
+    {
+        "id": 43,
+        "nombre": "Hermética",
+        "pais_id": 9,
+        "genero_id": 3
+    },
+    {
+        "id": 44,
+        "nombre": "Almafuerte",
+        "pais_id": 9,
+        "genero_id": 3
+    },
+    {
+        "id": 45,
+        "nombre": "Flema",
+        "pais_id": 9,
+        "genero_id": 4
+    },
+    {
+        "id": 46,
+        "nombre": "Madonna",
+        "pais_id": 144,
+        "genero_id": 2
+    },
+    {
+        "id": 47,
+        "nombre": "Michael Jackson",
+        "pais_id": 59,
+        "genero_id": 2
+    },
+    {
+        "id": 48,
+        "nombre": "Britney Spears",
+        "pais_id": 59,
+        "genero_id": 2
+    },
+    {
+        "id": 49,
+        "nombre": "Led Zeppelin",
+        "pais_id": 144,
+        "genero_id": 1
+    },
+    {
+        "id": 50,
+        "nombre": "Deep Purple",
+        "pais_id": 144,
+        "genero_id": 1
+    },
+    {
+        "id": 51,
+        "nombre": "Los Abuelos De La Nada",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 52,
+        "nombre": "Sui Generis",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 53,
+        "nombre": "Serú Girán",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 54,
+        "nombre": "Callejeros",
+        "pais_id": 9,
+        "genero_id": 1
+    },
+    {
+        "id": 55,
+        "nombre": "Men At Work",
+        "pais_id": 11,
+        "genero_id": 1
+    },
+    {
+        "id": 56,
+        "nombre": "INXS",
+        "pais_id": 11,
+        "genero_id": 1
+    },
+    {
+        "id": 57,
+        "nombre": "Kreator",
+        "pais_id": 3,
+        "genero_id": 3
+    },
+    {
+        "id": 58,
+        "nombre": "Anthrax",
+        "pais_id": 59,
+        "genero_id": 3
+    },
+    {
+        "id": 59,
+        "nombre": "Slayer",
+        "pais_id": 59,
+        "genero_id": 3
+    },
+    {
+        "id": 60,
+        "nombre": "Extremoduro",
+        "pais_id": 58,
+        "genero_id": 1
+    },
+    {
+        "id": 61,
+        "nombre": "Héroes Del Silencio",
+        "pais_id": 58,
+        "genero_id": 1
+    },
+    {
+        "id": 62,
+        "nombre": "Ska-P",
+        "pais_id": 58,
+        "genero_id": 4
+    },
+    {
+        "id": 63,
+        "nombre": "Sepultura",
+        "pais_id": 26,
+        "genero_id": 3
+    },
+    {
+        "id": 64,
+        "nombre": "Scorpions",
+        "pais_id": 3,
+        "genero_id": 3
+    },
+    {
+        "id": 65,
+        "nombre": "Helloween",
+        "pais_id": 3,
+        "genero_id": 3
     }
 ]

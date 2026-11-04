@@ -1,6 +1,5 @@
 from Funciones import datos, pantalla
 
-
 # ==================== USUARIOS ====================
 def buscarUsuario(usuarios, nombre_usuario):
     """Devuelve el usuario si existe, o None si no existe."""
@@ -8,7 +7,6 @@ def buscarUsuario(usuarios, nombre_usuario):
         if usuario["usuario"] == nombre_usuario:
             return usuario
     return None
-
 
 def registro():
     usuarios = datos.leerDatos("usuarios")
@@ -42,17 +40,12 @@ def registro():
         return None
 
     # Armamos el usuario nuevo y lo agregamos a la lista
-    nuevo_usuario = {
-        "usuario": nombre_usuario,
-        "contraseña": contraseña,
-        "bandas_favoritas": []
-    }
+    nuevo_usuario = {"usuario": nombre_usuario, "contraseña": contraseña, "bandas_favoritas": []}
     usuarios.append(nuevo_usuario)
     datos.guardarDatos("usuarios", usuarios)
 
     pantalla.avisar("Usuario registrado con éxito.")
     return nombre_usuario
-
 
 def login():
     usuarios = datos.leerDatos("usuarios")

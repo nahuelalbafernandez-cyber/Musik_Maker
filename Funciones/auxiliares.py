@@ -1,7 +1,5 @@
 import difflib
-
 from Funciones import pantalla
-
 
 # ==================== AUXILIARES ====================
 # Sirven para cualquier lista que tenga "id" y "nombre" (bandas, paises, tablaturas, etc.)
@@ -13,7 +11,6 @@ def normalizar(texto):
     texto = texto.replace("ó", "o").replace("ú", "u").replace("ü", "u")
     return texto
 
-
 def buscarPorId(lista, id_buscado):
     """Devuelve el elemento con ese id, o None si no existe."""
     for elemento in lista:
@@ -21,6 +18,23 @@ def buscarPorId(lista, id_buscado):
             return elemento
     return None
 
+def nombrePorId(lista, id_buscado, texto_si_no_existe):
+    """Devuelve el nombre del elemento con ese id.
+    Si no existe, devuelve el texto que le pasamos (ej: "sin país")."""
+    elemento = buscarPorId(lista, id_buscado)
+    if elemento is None:
+        return texto_si_no_existe
+    return elemento["nombre"]
+
+def contarRelacionados(lista, campo, id_buscado):
+    """Cuenta cuántos elementos apuntan a ese id.
+    Ej: contarRelacionados(bandas, "pais_id", 9) -> cuántas bandas son del país 9.
+    Usamos .get() porque los datos viejos pueden no tener ese campo."""
+    cantidad = 0
+    for elemento in lista:
+        if elemento.get(campo) == id_buscado:
+            cantidad = cantidad + 1
+    return cantidad
 
 def existeNombre(lista, nombre):
     """True si ya hay un elemento con ese nombre (sin importar mayúsculas)."""
@@ -29,7 +43,6 @@ def existeNombre(lista, nombre):
             return True
     return False
 
-
 def nuevoId(lista):
     """Devuelve el id para un elemento nuevo: el más grande que haya + 1."""
     id_nuevo = 1
@@ -37,7 +50,6 @@ def nuevoId(lista):
         if elemento["id"] >= id_nuevo:
             id_nuevo = elemento["id"] + 1
     return id_nuevo
-
 
 def buscarPorNombre(lista, texto):
     """Busca en la lista por nombre y devuelve una lista con los resultados.
@@ -70,7 +82,6 @@ def buscarPorNombre(lista, texto):
             encontrados.append(elemento)
     return encontrados
 
-
 def elegirElemento(lista, titulo):
     """Muestra los nombres de la lista en una ventanita para elegir uno.
     Devuelve el elemento elegido, o None si no se eligió nada."""
@@ -86,7 +97,6 @@ def elegirElemento(lista, titulo):
         if elemento["nombre"] == nombre_elegido:
             return elemento
     return None
-
 
 def elegirPorNombre(lista, titulo, pregunta):
     """Pide un nombre, lo busca en la lista y devuelve el elemento elegido, o None.
